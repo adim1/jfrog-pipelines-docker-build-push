@@ -20,10 +20,11 @@ resources:
      # sourceArtifactory: demoArt
       #buildName: svc_build
       #buildNumber: 1
+
 pipelines:
     name: pipeline_docker_build_push
     steps:
-      - name: docker_build
+        name: docker_build
         type: DockerBuild
         configuration:
           dockerFileLocation: .
